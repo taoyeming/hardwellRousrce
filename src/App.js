@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './components/home';
+import NotFound from './components/notFound';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { ConfigProvider, Layout } from 'antd';
+import Header from './components/header';
+import Footer from './components/footer';
+const { Content } = Layout;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <ConfigProvider
+      theme={{}}
+    >
+      <Layout className='min-h-screen'>
+        <Header />
+        <Content className='flex-1 bg-white'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Content>
+        <Footer />
+      </Layout>
+    </ConfigProvider>
+  </BrowserRouter>
+)
 
-export default App;
+export default App
