@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'bcbcbc': '#bcbcbc'
+      },
+      backgroundImage: {
+        'shigong': "url('./asset/bg.jpg')",
+      },
+    },
   },
   plugins: [],
 }
