@@ -20,7 +20,7 @@ const Component = () => {
         key: '越狱源',
       },
       {
-        label: <a href="资源列表">资源列表</a>,
+        label: <a href="/source">资源列表</a>,
         key: '资源列表',
       },
       {
@@ -56,7 +56,7 @@ const Component = () => {
   return <Header className='bg-white sticky top-0 shadow-md pl-1 pr-1 flex justify-between'>
     <a className="flex w-32 min-w-32" href="/">
       <img src={logo} alt="logo" className="h-11 mt-auto mb-auto" />
-      <span>软硬件资源网</span>
+      <span>玩机资源网</span>
     </a>
     {menus}
 

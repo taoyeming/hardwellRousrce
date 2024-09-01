@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, Layout } from 'antd';
+import { Layout } from 'antd';
 
 const { Footer } = Layout;
 
 const Component = () => {
   return <Footer className='p-2'>
-    <Button type='link' className='ml-auto mr-auto w-fit flex'>
+    <a className='ml-auto mr-auto w-fit flex' href="https://beian.miit.gov.cn">
       浙ICP备2024107647号-1
-    </Button>
+    </a>
   </Footer>
 }
 
