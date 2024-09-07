@@ -24,7 +24,7 @@ const Component = () => {
             title: 'App加锁助手',
             desc: '一款提供越狱iOS设备App加锁的工具，支持多种加锁方式，支持iOS14-16设备有根及无根环境，已上传BigBoss及搞机软件源。',
             tag: 'iOS插件',
-            url: '/123123'
+            url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.AppLockPro'
         },
         {
             title: 'WinPE',

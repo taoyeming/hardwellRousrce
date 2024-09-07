@@ -16,7 +16,7 @@ const Component = () => {
   const menus = useMemo(() => {
     const items = [
       {
-        label: <a href="越狱源">越狱源</a>,
+        label: <a href="https://apt.wanjitech.com/">越狱源</a>,
         key: '越狱源',
       },
       {
@@ -24,11 +24,11 @@ const Component = () => {
         key: '资源列表',
       },
       {
-        label: <a href="激活码查询">激活码查询</a>,
+        label: <a href="https://app.wanjitech.com/applock/querycode.php">激活码查询</a>,
         key: '激活码查询',
       },
       {
-        label: <a href="关注站长">关注站长</a>,
+        label: <a href="/follow">关注站长</a>,
         key: '关注站长',
       }
     ]
