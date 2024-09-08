@@ -7,6 +7,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Source from './components/source';
 import Follow from './components/follow';
+import Tutorial from './components/tutorial';
 const { Content } = Layout;
 
 const App = () => (
@@ -22,6 +23,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/source" element={<Source />} />
               <Route path="/follow" element={<Follow />} />
+              <Route path='/tutorial' element={<Tutorial/>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>

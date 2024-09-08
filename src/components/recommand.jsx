@@ -9,23 +9,29 @@ export default () => {
 
     const isMobile = !screens.md;
 
-    const item = [{
-        title: 'App加锁助手(App Lock)',
-        desc: '为App加锁，支持密码，图形及指纹/面容,关注微信公众号：搞机分享汇及小程序：搞机资源库，获取更多资源。',
-        url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.AppLockPro',
-        date: '2024-06-23',
-        isHot: true,
-    }, {
-        title: 'App Hider Pro(应用隐藏Pro)',
-        desc: 'Hide your Apps from SpringBoard',
-        url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.apphiderpro',
-        date: '2024-07-23',
-    }, {
-        title: 'In-App Lock(App内部锁)',
-        desc: 'Lock the App, lock inside the App. Support graphic lock, pay attention to wechat public number and Tiktok:搞机分享汇 to get free access .为App加锁，在App内部加锁。支持图形锁,关注微信公众号及抖音：搞机分享汇,免费获取使用权限。',
-        url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.inapplock.rootless',
-        date: '2024-07-08',
-    }]
+    const item = [
+        {
+            title: 'App加锁助手',
+            desc: '一款提供越狱iOS设备App加锁的工具，支持多种加锁方式，支持iOS14-16设备有根及无根环境，已上传BigBoss及搞机软件源。',
+            tag: 'iOS插件',
+            url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.AppLockPro',
+            date: '2024-09-08',
+        },
+        {
+            title: 'WinPE',
+            desc: '一款简洁的PE启动盘制作工具。',
+            tag: '网站',
+            url: 'https://www.wepe.com.cn/download.html',
+            date: '2024-09-08',
+        },
+        {
+            title: 'MSDN',
+            desc: '一个原版Windows系统下载网站。',
+            tag: '网站',
+            url: 'https://msdn.itellyou.cn',
+            date: '2024-09-08',
+        }
+    ]
 
     const renderItem = (item) => {
         

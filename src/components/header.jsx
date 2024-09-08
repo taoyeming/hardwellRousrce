@@ -24,6 +24,10 @@ const Component = () => {
         key: '资源列表',
       },
       {
+        label: <a href="/tutorial">教程列表</a>,
+        key: '教程列表',
+      },
+      {
         label: <a href="https://app.wanjitech.com/applock/querycode.php">激活码查询</a>,
         key: '激活码查询',
       },
