@@ -9,7 +9,7 @@ module.exports = {
         'bcbcbc': '#bcbcbc'
       },
       backgroundImage: {
-        'shigong': "url('https://api.paugram.com/wallpaper/')",
+        'shigong': "url('https://imgapi.xl0408.top')",
       },
     },
   },
