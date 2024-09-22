@@ -62,6 +62,7 @@ const Component = () => {
       <img src={logo} alt="logo" className="h-11 mt-auto mb-auto" />
       <span>玩机资源网</span>
     </a>
+    <Button type="link" onClick={() => { window.open("http://gaoji.net.cn") }} className={"mt-auto mr-auto mb-auto ml-0"}>返回旧版</Button>
     {menus}
 
   </Header>

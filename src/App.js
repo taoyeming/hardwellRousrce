@@ -17,7 +17,7 @@ const App = () => (
     >
       <Layout className='min-h-screen'>
         <Header />
-        <Content className='flex-1 relative overflow-hidden bg-shigong bg-bottom bg-contain bg-no-repeat bg-bcbcbc'>
+        <Content className='flex-1 relative overflow-hidden bg-shigong bg-right-bottom bg-contain bg-no-repeat bg-white'>
           <div className="backdrop-blur-sm ml-auto mr-auto bg-white/50 mt-5 mb-5 w-4/5 rounded-lg p-3 shadow-md text-center min-h-96">
             <Routes>
               <Route path="/" element={<Home />} />
