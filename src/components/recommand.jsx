@@ -3,7 +3,7 @@ import React from "react";
 
 const { useBreakpoint } = Grid;
 
-export default () => {
+const Components = () => {
 
     const screens = useBreakpoint();
 
@@ -56,3 +56,5 @@ export default () => {
         }
     </div>
 }
+
+export default Components;
