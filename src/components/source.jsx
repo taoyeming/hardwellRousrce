@@ -1,14 +1,32 @@
-import { Card, Tag } from "antd";
+import { Card, Tag, Modal } from "antd";
 import { LinkOutlined } from '@ant-design/icons'
 import React from "react";
 
-const Item = ({title, desc, tag, url}) => {
+const Item = ({title, desc, tag, url, password}) => {
     return <Card 
         title={title} 
         className="mt-2 shadow-md hover:shadow-blue-400 cursor-pointer" 
         extra={<Tag color="#2db7f5" icon={<LinkOutlined />}>{tag}</Tag>}
         onClick={() => {
-            window.open(url)
+            if (password) {
+                navigator.clipboard.writeText(password).then(() => {
+                    Modal.info({
+                        content: `已复制密码，点击确定转跳`,
+                        onOk: () => {
+                            window.open(url)
+                        }
+                    })
+                }).catch(() => {
+                    Modal.info({
+                        content: `请手动复制密码：${password}`,
+                        onOk: () => {
+                            window.open(url)
+                        }
+                    })
+                })
+            } else {
+                window.open(url)
+            }
         }}
     >
         <font className="text-left">
@@ -36,7 +54,8 @@ const Component = () => {
             title: 'CS扫描全能王',
             desc: '扫描全能王解锁功能限制安装包。',
             tag: 'iOS软件',
-            url: 'https://caiyun.139.com/m/i?165CkuGx9Xmxp'
+            url: 'https://caiyun.139.com/m/i?165CkuGx9Xmxp',
+            password: "4z6L",
         },
         {
             title: 'MSDN',
