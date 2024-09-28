@@ -1,9 +1,9 @@
-import { Card, Grid, Tag } from "antd";
+import { Card, Grid } from "antd";
 import React from "react";
 
 const { useBreakpoint } = Grid;
 
-const Item = ({ title, desc, tag, url, logo }) => {
+const Item = ({ title, desc, url, logo }) => {
 
     const screens = useBreakpoint();
 
@@ -14,7 +14,7 @@ const Item = ({ title, desc, tag, url, logo }) => {
             window.open(url)
         }}>
             <div className="flex">
-                <img src={logo} className="h-10 mr-3" />
+                <img src={logo} alt="tlogo" className="h-10 mr-3" />
                 <div>
                     <div>{title}</div>
                     <div className=" line-clamp-2 text-gray-500 h-10">{desc}</div>
