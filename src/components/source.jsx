@@ -33,6 +33,12 @@ const Component = () => {
             url: 'https://www.wepe.com.cn/download.html'
         },
         {
+            title: 'CS扫描全能王',
+            desc: '扫描全能王解锁功能限制安装包。',
+            tag: 'iOS软件',
+            url: 'https://caiyun.139.com/m/i?165CkuGx9Xmxp'
+        },
+        {
             title: 'MSDN',
             desc: '一个原版Windows系统下载网站。',
             tag: '网站',
