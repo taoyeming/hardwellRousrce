@@ -1,6 +1,6 @@
 {
   "name": "hardware-resource",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "private": true,
   "dependencies": {
     "antd": "^5.20.3",
