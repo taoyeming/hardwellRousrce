@@ -34,12 +34,16 @@ const Component = () => {
         <Tabs defaultActiveKey={wallpaperData[0]} items={wallpaperData} onChange={v => {
             setSelected(wallpaperData.find(i => i.key === v))
         }} centered />
-        <div className=" flex flex-wrap">
+        <div className="flex flex-wrap">
             {
                 picturelist?.map(i => {
                     return <Item url={i} />
                 })
             }
+        </div>
+        <div className="mt-4">
+            <p>本站图片资源来自网络</p>
+            <p>如发布的内容侵犯您的版权或其他利益，联系删除，请编辑邮件并加以说明到angel.erik@iCloud.com，我们会在收到您的消息后24小时内对相应内容进行处理。</p>
         </div>
     </div>
 }
