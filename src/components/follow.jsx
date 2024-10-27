@@ -11,11 +11,11 @@ const Component = () => {
         <div className="flex justify-around mb-4 max-w-[800px] mr-auto ml-auto">
             <div className='flex-1 mr-4'>
                 <img src={douyin} className="w-full" alt="dy" />
-                <span>抖音：搞机分享汇</span>
+                <span>抖音：玩机分享汇</span>
             </div>
             <div className='flex-1 mr-4'>
                 <img src={fenxianghui} className="w-full" alt="gzh" />
-                <span>公众号：搞机分享汇</span>
+                <span>公众号：玩机分享汇</span>
             </div>
             <div className='flex-1'>
                 <img src={weixin} className="w-full" alt="wx" />
