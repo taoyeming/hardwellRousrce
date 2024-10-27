@@ -28,8 +28,8 @@ const Component = () => {
         key: '教程列表',
       },
       {
-        label: <a href="https://app.wanjitech.com/applock/querycode.php">激活码查询</a>,
-        key: '激活码查询',
+        label: <a href="/wallpaper">壁纸</a>,
+        key: '壁纸',
       },
       {
         label: <a href="/follow">关注站长</a>,
