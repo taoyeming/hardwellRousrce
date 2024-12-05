@@ -15,10 +15,10 @@ const Component = () => {
 
   const menus = useMemo(() => {
     const items = [
-      // {
-      //   label: <a href="https://apt.wanjitech.com/">越狱源</a>,
-      //   key: '越狱源',
-      // },
+      {
+        label: <a href="https://apt.wanjitech.com/">越狱源</a>,
+        key: '越狱源',
+      },
       {
         label: <a href="/source">资源列表</a>,
         key: '资源列表',

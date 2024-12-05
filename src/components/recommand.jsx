@@ -10,13 +10,13 @@ const Components = () => {
     const isMobile = !screens.md;
 
     const item = [
-        // {
-        //     title: 'App加锁助手',
-        //     desc: '一款提供越狱iOS设备App加锁的工具，支持多种加锁方式，支持iOS14-16设备有根及无根环境，已上传BigBoss及搞机软件源。',
-        //     tag: 'iOS插件',
-        //     url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.AppLockPro',
-        //     date: '2024-09-08',
-        // },
+        {
+            title: 'App加锁助手',
+            desc: '一款提供越狱iOS设备App加锁的工具，支持多种加锁方式，支持iOS14-16设备有根及无根环境，已上传BigBoss及搞机软件源。',
+            tag: 'iOS插件',
+            url: 'https://apt.wanjitech.com/depictions/index.html?packageId=com.erik.AppLockPro',
+            date: '2024-09-08',
+        },
         {
             title: 'WinPE',
             desc: '一款简洁的PE启动盘制作工具。',
