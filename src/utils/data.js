@@ -47,25 +47,27 @@ export const homeAlertDetail = {
  */
 export const wallpaperData = [
     {
-        label: '手机壁纸',
-        key: '手机壁纸',
-        picturelist: [
-            "https://wx.wanjitech.com/bizhi/1.JPG",
-            "https://wx.wanjitech.com/bizhi/2.JPG",
-            "https://wx.wanjitech.com/bizhi/3.JPG",
-            "https://wx.wanjitech.com/bizhi/4.JPG",
-            "https://wx.wanjitech.com/bizhi/5.JPG",
-            "https://wx.wanjitech.com/bizhi/6.JPG",
-            "https://wx.wanjitech.com/bizhi/7.JPG",
-            "https://wx.wanjitech.com/bizhi/8.JPG",
-            "https://wx.wanjitech.com/bizhi/9.JPG",
-        ]
+        categoryname: "风景",
+        pictureUrl: "https://wx.wanjitech.com/bizhi/pc/2.JPG",
+        path: "fj"
     },
     {
-        label: '电脑壁纸',
-        key: '电脑壁纸',
-        picturelist: [
-            "https://wx.wanjitech.com/bizhi/10.JPG",
-        ]
+        categoryname: "影视",
+        pictureUrl: "https://wx.wanjitech.com/bizhi/26.JPG",
+        path: "ys"
+    },
+    {
+        categoryname: "美女",
+        pictureUrl: "https://wx.wanjitech.com/bizhi/mn/z5zz1x2Iiv1z_1731289983860.JPG",
+        path: "mn"
+    },
+    {
+        categoryname: "电脑",
+        pictureUrl: "https://wx.wanjitech.com/bizhi/pc/1.JPG",
+        path: "pc"
     }
-]
+].map(i => ({
+    label: i.categoryname,
+    key: i.categoryname,
+    ...i,
+}))

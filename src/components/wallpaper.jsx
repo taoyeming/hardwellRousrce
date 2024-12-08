@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { Tabs, Grid } from 'antd'
+import React, { useEffect, useState } from "react";
+import { Tabs, Grid, Spin } from 'antd'
 import { wallpaperData } from '../utils/data';
+import { getWallpaperList } from '../utils/api';
 
 const { useBreakpoint } = Grid;
 
@@ -28,19 +29,36 @@ const Item = ({ url }) => {
 const Component = () => {
     const [selected, setSelected] = useState(wallpaperData[0])
 
-    const picturelist = selected?.picturelist
+    const [picturelist, setPicturelist] = useState([]);
+    const [loading, setLoaing] = useState(false);
+
+    useEffect(() => {
+        if (!selected?.path) {
+            return;
+        }
+        setLoaing(true)
+        getWallpaperList(selected.path, 1).then(res => {
+            const { data } = res || {}
+            const { picturelist } = data || {}
+            setPicturelist(picturelist)
+        }).finally(() => {
+            setLoaing(false)
+        });
+    }, [selected?.path])
 
     return <div>
-        <Tabs defaultActiveKey={wallpaperData[0]} items={wallpaperData} onChange={v => {
-            setSelected(wallpaperData.find(i => i.key === v))
-        }} centered />
-        <div className="flex flex-wrap">
-            {
-                picturelist?.map(i => {
-                    return <Item url={i} />
-                })
-            }
-        </div>
+        <Spin spinning={loading}>
+            <Tabs defaultActiveKey={wallpaperData[0]} items={wallpaperData} onChange={v => {
+                setSelected(wallpaperData.find(i => i.key === v))
+            }} centered />
+            <div className="flex flex-wrap">
+                {
+                    picturelist?.map(i => {
+                        return <Item url={i} />
+                    })
+                }
+            </div>
+        </Spin>
         <div className="mt-4">
             <p>本站图片资源来自网络</p>
             <p>如发布的内容侵犯您的版权或其他利益，联系删除，请编辑邮件并加以说明到angel.erik@iCloud.com，我们会在收到您的消息后24小时内对相应内容进行处理。</p>
